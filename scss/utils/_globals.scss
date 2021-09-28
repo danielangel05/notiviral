@@ -1,0 +1,44 @@
+/* global CSS starts */
+html{
+    font-size: 62.5%;
+    font-family: 'Georama', sans-serif;
+}
+p {
+    color: aliceblue;
+    text-shadow: 2px 2px 3px darkblue;
+    ;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../pictures/background.jpg);
+    background-size: 100%;
+    font-size: 2em;
+    font-family: 'Georama', sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: stretch;
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+.header{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    }
+.main{
+    grid-column-start: 3;
+    grid-column-end: 11;  
+}
+.footer{
+    grid-column-start: 3;
+    grid-column-end: 11;  
+}
+.font-type-bold{
+    font-family: 'Georama', sans-serif;
+    font-weight: bold;
+    color: darkblue
+}
+/* global CSS ends */

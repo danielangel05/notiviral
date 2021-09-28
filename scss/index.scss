@@ -1,0 +1,163 @@
+// imports
+@import "./utils/variables";
+@import "./utils/globals";
+
+// pages
+@import "./pages/home";
+@import "./pages/contacto";
+@import "./pages/mexico";
+@import "./pages/colombia";
+@import "./pages/cocina";
+
+// partials
+@import "./partials/header";
+@import "./partials/footer";
+
+/* section starts */
+h2{ 
+    color: darkblue;
+}
+h3{ 
+    color: darkblue;
+}
+.main__section{
+    text-align: center;
+    justify-content: center;
+}
+.dadsection1-flex{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.pulsate-daniel:hover {
+	-webkit-animation: pulsate-bck 1s ease-in-out infinite both;
+	        animation: pulsate-bck 1s ease-in-out infinite both;
+}
+/* section ends */
+/* form starts */
+#label-font{
+    color: darkblue;
+    font-weight: bold;
+}
+input{
+    margin-bottom: 20px;
+}
+textarea{
+    margin-bottom: 20px;
+}
+select{
+    margin-bottom: 20px;
+}
+form{
+    text-align: center;
+}
+/* form ends */
+ 
+ /* responsive starts */
+ @media only screen and (max-width: 1024px) {
+body {
+    font-size: 1rem;
+}
+ }
+ @media only screen and (max-width: 780px) {
+body {
+   font-size: 0.9rem;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: stretch;
+    grid-column-start: 2;
+    grid-column-end: 8;
+}
+.header{
+    grid-column-start: 2;
+    grid-column-end: 8;
+    }
+.main{
+    grid-column-start: 2;
+    grid-column-end: 8;  
+}
+.footer{
+    grid-column-start: 2;
+    grid-column-end: 8;  
+}
+ }
+ @media only screen and (max-width: 480px) {
+body {
+    font-size: 0.8rem;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: stretch;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.header{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    }
+.main{
+    grid-column-start: 2;
+    grid-column-end: 6;  
+}
+.footer{
+    grid-column-start: 2;
+    grid-column-end: 6;  
+}
+ }
+ /* responsive ends */
+ /* animations and transitions */
+ @-webkit-keyframes .title-animation {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-daniel {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }

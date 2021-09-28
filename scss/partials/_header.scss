@@ -1,0 +1,50 @@
+/* header starts */
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: darkblue;
+    font-weight: bold;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+header h1{
+    color: darkblue;
+    font-size: 3em;
+    text-align: center;
+}
+.header__portada{
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px darkblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-weight: bold;
+    background-color: darkblue;
+    color: white;
+}
+.header__title {
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+}
+header nav ul li a{
+    font-size: 100%;
+    transition: all 1s;
+}
+header nav ul li a:hover{
+    background-color: lightblue;
+    color: darkblue;
+    font-size: 130%;
+}
+.header__menu__enlace{
+    font-family: 'Georama', sans-serif;
+    font-weight: bold;
+    color: darkblue
+}
+/* header ends */

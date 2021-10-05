@@ -41,6 +41,13 @@ body{
     font-weight: bold;
     color: darkblue
 }
+.main__centralized{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+ }
 /* global CSS ends */
 /* header starts */
 .header__menu{
@@ -162,6 +169,18 @@ form{
      text-decoration: none;
  }
  /* footer ends */
+ /* 404 error starts */
+ .div__h1{
+     font-size: 6em;
+     color: darkblue;
+     text-shadow: 2px 2px 3px aliceblue;
+     font-weight: bold;
+ }
+ .div__button__a{
+     text-decoration: none;
+     color: white;
+ }
+ /* 404 error ends */
  /* responsive starts */
  @media only screen and (max-width: 1024px) {
 body {
